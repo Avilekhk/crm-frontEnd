@@ -1,16 +1,18 @@
 import React from "react";
 import "./App.css";
-// import {Button} from 'react-bootstrap';
-import { Dashboard } from "./page/dashboard/Dashboard.page";
+import { AddTicketForm } from "./components/add-ticket-form/AddTicketForm.comp";
 import { DefaultLayout } from "./layout/DefaultLayout";
+import { Dashboard } from "./page/dashboard/Dashboard.page";
+
 function App() {
   return (
     <div className="App">
-      {/* <Entry></Entry>
-       */}
+      {/* <Entry /> */}
+
       <DefaultLayout>
         <Dashboard />
       </DefaultLayout>
+      <AddTicketForm />
     </div>
   );
 }
